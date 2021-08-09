@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Javascript Slider</title>
     <style>
+      body {
+        background-color: #202124;
+      }
       img {
         width: 500px;
         height: 300px;
       }
+      a {
+        top: -9rem;
+        cursor: pointer;
+        position: relative;
+        padding: 10px 20px;
+        background-color: rgba(221, 221, 221, 0.726);
+        transition: all 1s ease;
+        color: white;
+        border-radius: 5rem;
+      }
+      a:hover {
+        color: white;
+        background-color: #ff448e;
+        transition: all 2s ease;
+      }
+      .one {
+        left: 6.3rem;
+      }
+      .two {
+        right: 4.7rem;
+      }
     </style>
   </head>
   <body>
-    <button onclick="prev()">Previous</button>
+    <a class="one" onclick="prev()">Previous</a>
     <img src="./images/01.jpg" alt="" />
-    <button onclick="next()">Next</button>
+    <a class="two" onclick="next()">Next</a>
     <script src="./index.js"></script>
   </body>
 </html>
